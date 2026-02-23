@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  color: #000000;
+  background-color: black;
+}
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/background1.avif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.contianer {
+  padding: 10px 40px;
+  color: antiquewhite;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  margin: 15px;
+  width: 80px;
+  border-radius: 50px;
+}
+.lname {
+  color: antiquewhite;
+}
+.lname h3 {
+  margin-left: -450px;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: antiquewhite;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  font-size: 20px;
+}
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.1s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.header-text {
+  margin: 12%;
+  font-size: 30px;
+  margin-left: 0;
+  color: antiquewhite;
+}
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+/*-------------------portfolio-------------*/
+
+#portfolio {
+  padding: 30px 50px;
+  border-radius: 20px;
+}
+.subtitle {
+  color: antiquewhite;
+  font-size: 50px;
+}
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
+  color: antiquewhite;
+}
+.work {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.work img {
+  border-radius: 30px;
+  width: 100%;
+  height: 375px;
+  display: block;
+}
+.layer {
+  margin-top: 15px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #000000);
+  border-radius: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.layer a {
+  margin: 5px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  background-color: rgb(233, 226, 216);
+  border-radius: 15px;
+  text-decoration: none;
+}
+/*-----------about--------*/
+
+#about {
+  padding: 80px 70px;
+  color: antiquewhite;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col-1 {
+  flex-basis: 35%;
+}
+.col-1 img {
+  width: 70%;
+  border-radius: 15px;
+  height: 100%;
+}
+.col-2 {
+  flex-basis: 65%;
+}
+.col-2 p {
+  margin-top: 10px;
+}
+.subtitle {
+  margin-top: 20px;
+  font-size: 50px;
+}
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents{
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span{
+color: #b54769;
+font-size: 14px;
+}
+.tab-contents{
+  display: none;
+}
+.tab-contents.active-tab{
+  display: block;
+}
+/* ----------------------------contact------------------------------ */
+.contact-left{
+flex-basis: 35%;
+}
+.contact-right{
+flex-basis: 60%;
+}
+.contact-left p{
+  margin-top: 30px;
+}
+.contact-left p i{
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social-icons{
+margin-top: 30px;
+}
+.social-icons a{
+text-decoration: none;
+font-size: 30px;
+margin-right: 15px;
+color: #ababab;
+display: inline-block;
+}
+.social-icons a:hover{
+color: #ff004f;
+transform: translateY(-5px);
+}
+.btn{
+display: block;
+margin: 50px auto;
+width: fit-content;
+border: 1px solid #ff004f;
+padding: 14px 50px;
+border-radius: 6px;
+text-decoration: none;
+color: #fff;
+transition: background 0.5s;
+}
+.btn:hover{
+background: #ff004f;
+
+}
+.btn.btn2{
+display: inline-block;
+background: #ff004f;
+}
+.contact-right form{
+  width: 100%;
+}
+form input, form textarea{
+width: 100%;
+border: 0;
+outline: none;
+background: #262626;
+padding: 15px;
+margin: 15px 0;
+color: #fff;
+font-size: 18px;
+border-radius: 6px;
+}
+form .btn2{
+padding: 14px 60px;
+font-size: 18px;
+margin-top: 20px;
+cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
